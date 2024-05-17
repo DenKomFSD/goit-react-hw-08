@@ -8,6 +8,7 @@ export default function RegistrationForm() {
     dispatch(register(values));
     actions.resetForm();
   };
+  //testden@mail.com
   return (
     <>
       <Formik
