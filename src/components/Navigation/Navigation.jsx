@@ -3,8 +3,8 @@ import { NavLink } from "react-router-dom";
 export default function Navigation() {
   return (
     <nav>
-      <NavLink>Homepage</NavLink>
-      <NavLink>Contacts</NavLink>
+      <NavLink to="/">Homepage</NavLink>
+      <NavLink to="/contacts">Contacts</NavLink>
     </nav>
   );
 }
