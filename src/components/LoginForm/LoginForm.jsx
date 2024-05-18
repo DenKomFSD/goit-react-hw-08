@@ -2,6 +2,7 @@ import { Formik, Form, Field } from "formik";
 import { useDispatch } from "react-redux";
 import { login } from "../../redux/auth/operations";
 import toast from "react-hot-toast";
+import css from "./LoginForm.module.css";
 
 export default function LoginForm() {
   const dispatch = useDispatch();
@@ -29,16 +30,18 @@ export default function LoginForm() {
         }}
         onSubmit={handleSubmit}
       >
-        <Form autoComplete="off">
-          <label>
+        <Form autoComplete="off" className={css.formik}>
+          <label className={css.label}>
             Email
-            <Field type="email" name="email" />
+            <Field type="email" name="email" className={css.field} />
           </label>
-          <label>
+          <label className={css.label}>
             Password
-            <Field type="password" name="password" />
+            <Field type="password" name="password" className={css.field} />
           </label>
-          <button type="submit">Login</button>
+          <button type="submit" className={css.btn}>
+            Login
+          </button>
         </Form>
       </Formik>
     </>

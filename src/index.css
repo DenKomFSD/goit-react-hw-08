@@ -5,7 +5,9 @@
 
   color-scheme: light dark;
   color: rgba(0, 0, 0, 0.87);
-  background-color: #445971;
+  /* background-color: #445971; */
+  background: linear-gradient(135deg, #000428 0%, #004e92 100%);
+  background-attachment: fixed;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -48,7 +50,7 @@ body {
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
-  color: #c6f806;
+  color: #fed403;
 }
 
 button {
