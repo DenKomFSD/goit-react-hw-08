@@ -2,7 +2,7 @@ import { Formik, Form, Field } from "formik";
 import { useDispatch } from "react-redux";
 import { login } from "../../redux/auth/operations";
 import toast from "react-hot-toast";
-import css from "./LoginForm.module.css";
+import css from "../LoginForm/LoginForm.module.css";
 
 export default function LoginForm() {
   const dispatch = useDispatch();

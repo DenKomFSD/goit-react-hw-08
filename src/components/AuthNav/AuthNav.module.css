@@ -1,0 +1,10 @@
+.link {
+  color: #fed403;
+}
+
+.active {
+  background: #fed403;
+  color: black;
+  padding: 8px 16px;
+  border-radius: 8px;
+}
