@@ -42,6 +42,8 @@ const slice = createSlice({
       })
       .addCase(logout.fulfilled, (state) => {
         state.items = [];
+        state.loading = false;
+        state.error = null;
       }),
 });
 
