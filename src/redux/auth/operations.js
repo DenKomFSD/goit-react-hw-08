@@ -25,7 +25,6 @@ export const login = createAsyncThunk(
   async (userInfo, thunkAPI) => {
     try {
       const response = await axios.post("/users/login", userInfo);
-      console.log(response.data.token);
       //add header auth choose type of request (post, get, or common - for all requests)
       axios.defaults.headers.common[
         "Authorization"
