@@ -33,6 +33,10 @@ b {
   color: rgb(255, 247, 0);
 }
 
+p {
+  color: #fed403;
+}
+
 .logo {
   height: 6em;
   padding: 1.5em;
