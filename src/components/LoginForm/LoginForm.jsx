@@ -3,6 +3,7 @@ import { useDispatch } from "react-redux";
 import { login } from "../../redux/auth/operations";
 import toast from "react-hot-toast";
 import css from "../LoginForm/LoginForm.module.css";
+import { Link } from "react-router-dom";
 
 export default function LoginForm() {
   const dispatch = useDispatch();
@@ -44,6 +45,12 @@ export default function LoginForm() {
           </button>
         </Form>
       </Formik>
+      <p>
+        If you dont have, please{" "}
+        <Link to="/registration" className={css.link}>
+          register
+        </Link>
+      </p>
     </>
   );
 }

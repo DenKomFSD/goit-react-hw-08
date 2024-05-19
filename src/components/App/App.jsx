@@ -10,6 +10,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { refreshUser } from "../../redux/auth/operations";
 import { selectIsRefreshed } from "../../redux/auth/selectors";
 import RestrictedRoute from "../RestrictedRoute/RestrictedRoute";
+import PrivateRoute from "../PrivateRoute/PrivateRoute";
 const Homepage = lazy(() => import("../../pages/HomePage"));
 const LoginPage = lazy(() => import("../../pages/LoginPage"));
 const RegistrationPage = lazy(() => import("../../pages/RegistrationPage"));
@@ -30,7 +31,15 @@ function App() {
           <Suspense fallback={null}>
             <Routes>
               <Route path="/" element={<Homepage />} />
-              <Route path="/contacts" element={<ContactsPage />} />
+              <Route
+                path="/contacts"
+                element={
+                  <PrivateRoute
+                    component={<ContactsPage />}
+                    redirectTo="/login"
+                  />
+                }
+              />
               <Route
                 path="/registration"
                 element={
