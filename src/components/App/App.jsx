@@ -5,8 +5,15 @@ import Homepage from "../../pages/HomePage";
 import LoginPage from "../../pages/LoginPage";
 import RegistrationPage from "../../pages/RegistrationPage";
 import ContactsPage from "../../pages/ContactsPage";
+import { useEffect } from "react";
+import { useDispatch } from "react-redux";
+import { refreshUser } from "../../redux/auth/operations";
 
 function App() {
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(refreshUser());
+  }, [dispatch]);
   return (
     <>
       <Layout>

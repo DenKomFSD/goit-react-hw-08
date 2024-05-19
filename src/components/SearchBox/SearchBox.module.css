@@ -12,10 +12,10 @@
   color: #c6f806;
   border-radius: 8px;
   margin-bottom: 20px;
-  border: 1px solid black;
-  -webkit-box-shadow: 16px 16px 1px 3px rgba(0, 0, 0, 1);
-  -moz-box-shadow: 16px 16px 1px 3px rgba(0, 0, 0, 1);
-  box-shadow: 16px 16px 1px 3px rgba(0, 0, 0, 1);
+  border: 1px solid rgb(255, 255, 255);
+  -webkit-box-shadow: 16px 16px 1px 3px rgb(245, 245, 245);
+  -moz-box-shadow: 16px 16px 1px 3px rgb(245, 245, 245);
+  box-shadow: 16px 16px 1px 3px rgb(245, 245, 245);
 }
 
 .search {
