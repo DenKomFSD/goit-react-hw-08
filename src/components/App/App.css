@@ -29,6 +29,9 @@ nav {
   /* background-color: #2a2b2cae; */
   color: aliceblue;
 }
+b {
+  color: rgb(255, 247, 0);
+}
 
 .logo {
   height: 6em;
