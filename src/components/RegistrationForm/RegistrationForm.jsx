@@ -22,6 +22,7 @@ export default function RegistrationForm() {
         onSubmit={handleSubmit}
       >
         <Form className={css.formik}>
+          <h2 className={css.register}>Registration form</h2>
           <label className={css.label}>
             Username
             <Field type="text" name="name" className={css.field} />

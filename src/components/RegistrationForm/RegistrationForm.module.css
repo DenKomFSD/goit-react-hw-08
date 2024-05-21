@@ -13,6 +13,11 @@
   backdrop-filter: blur(12.5px);
   margin: 0 auto;
 }
+
+.register {
+  color: whitesmoke;
+  text-align: center;
+}
 .label {
   display: flex;
   flex-direction: column;
