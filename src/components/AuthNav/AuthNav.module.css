@@ -1,10 +1,11 @@
 .link {
-  color: #fed403;
+  color: whitesmoke;
+  font-size: 18px;
 }
 
 .active {
-  background: #fed403;
-  color: black;
+  background: #003465;
+  color: whitesmoke;
   padding: 8px 16px;
   border-radius: 8px;
 }

@@ -46,6 +46,7 @@ export default function LoginForm() {
         // validationSchema={userSchema}
       >
         <Form autoComplete="off" className={css.formik}>
+          <h2 className={css.login}>Log In</h2>
           <label className={css.label}>
             Email
             <Field type="email" name="email" className={css.field} />
@@ -57,14 +58,14 @@ export default function LoginForm() {
           <button type="submit" className={css.btn}>
             Login
           </button>
+          <p className={css.smalltext}>
+            Dont have account yet?
+            <Link to="/registration" className={css.linktext}>
+              Register for free
+            </Link>
+          </p>
         </Form>
       </Formik>
-      <p>
-        If you dont have, please{" "}
-        <Link to="/registration" className={css.link}>
-          register
-        </Link>
-      </p>
     </>
   );
 }
