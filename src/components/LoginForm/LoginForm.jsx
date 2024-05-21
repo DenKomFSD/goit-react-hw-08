@@ -1,4 +1,5 @@
 import { Formik, Form, Field } from "formik";
+// import * as Yup from "yup";
 import { useDispatch } from "react-redux";
 import { login } from "../../redux/auth/operations";
 import toast from "react-hot-toast";
@@ -7,6 +8,18 @@ import { Link } from "react-router-dom";
 
 export default function LoginForm() {
   const dispatch = useDispatch();
+  // const userSchema = Yup.object().shape({
+  //   name: Yup.string()
+  //     .min(3, "Name must be at least 3 characters")
+  //     .max(50, "Name must be at most 50 characters")
+  //     .required("Required"),
+
+  //   number: Yup.string()
+  //     .min(3, "Number must be at least 3 characters")
+  //     .max(50, "Number must be at most 50 characters")
+  //     .matches(/^\d{3}-\d{2}-\d{2}$/, "Invalid phone number format")
+  //     .required("Required"),
+  // });
   const handleSubmit = (values, actions) => {
     dispatch(login(values))
       .unwrap()
@@ -30,6 +43,7 @@ export default function LoginForm() {
           password: "",
         }}
         onSubmit={handleSubmit}
+        // validationSchema={userSchema}
       >
         <Form autoComplete="off" className={css.formik}>
           <label className={css.label}>

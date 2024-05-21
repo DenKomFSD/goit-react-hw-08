@@ -6,7 +6,12 @@
   color-scheme: light dark;
   color: rgba(0, 0, 0, 0.87);
   /* background-color: #445971; */
-  background: linear-gradient(135deg, #000428 0%, #004e92 100%);
+  /* background: linear-gradient(135deg, #000428 0%, #004e92 100%); */
+  background-image: url("../src/assets/background/Glass_Effect_Login_Page.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
   background-attachment: fixed;
 
   font-synthesis: none;
