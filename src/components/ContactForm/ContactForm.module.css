@@ -22,7 +22,7 @@
 }
 
 .labelfield {
-  color: #c6f806;
+  color: whitesmoke;
 }
 
 .inputfield {
@@ -32,23 +32,23 @@
   padding: 8px;
 
   margin-bottom: 16px;
-  color: #c6f806;
+  color: #003465;
   margin-bottom: 4px;
   border-radius: 8px;
-  border: 1px solid #c6f806;
+  border: 1px solid #bcbec0;
 
-  background: #000;
+  background: #fff;
 }
 .btn {
-  background-color: #ffec73;
-  color: black;
+  background-color: #003465;
+  color: whitesmoke;
   border: 1px solid darkgray;
   border-radius: 4px;
   padding: 8px 16px;
   max-height: 40px;
   max-width: 150px;
   align-self: center;
-  box-shadow: 9px 10px 0px 0px #000, 9px 7px 0.1px 0px rgba(0, 0, 0, 0.95);
+  font-weight: 700;
 }
 
 .error {
