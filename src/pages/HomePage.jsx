@@ -7,6 +7,9 @@ export default function Homepage() {
         margin: "0 auto",
         textAlign: "start",
         color: "#fed403",
+        background: "rgba(88, 130, 193, 0.28)",
+        backdropFilter: "blur(15px)",
+        border: "3px solid rgba(186, 204, 230, 0.49)",
       }}
     >
       <h2>Contact Book Application</h2>
